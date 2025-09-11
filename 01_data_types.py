@@ -1,0 +1,67 @@
+"""
+TASK 1:
+Create a float variable, and then convert it to an integer
+Print both the original variable and the converted integer.
+
+"""
+a_float = 18.976 
+print(a_float)
+a_int=int(a_float)
+print(a_int)
+
+"""
+TASK 2:
+Write code that takes a number as input and prints whether 
+it's positive, negative, or zero using if-elif-else statements.
+"""
+numb = int(input("Can you give me a number"))
+if numb > 0 :
+    print("This is a postive number")
+elif numb == 0 :
+    print("The number is zero")
+elif numb < 0 :
+    print("This is a negative number")
+
+"""
+TASK 3:
+
+Write code that takes two numbers as input (an integer and a float), 
+performs addition, subtraction, multiplication, and division, and prints the results.
+"""
+num = float(input("give me a number"))
+number = int(input("give me another number"))
+print(num + number)
+print(num - number)
+print(num * number)
+print(num / number)
+"""
+TASK 4:
+
+Create a dictionary with keys as fruit names and values as their respective quantities. 
+Then print out the quantity of one of the fruits.
+"""
+
+y = {
+    'mango' : 8,
+    'pineapples' : 9
+}
+print(y["mango"])
+
+"""
+TASK 5:
+
+Create a string variable with that is a list of numbers and convert that string into a tuple.
+Then print out the both the original string and tuple.
+"""
+my_string = "234"
+my_tuple = my_string.split(" ,")
+print(my_string)
+print(my_tuple)
+"""
+TASK 6:
+
+Create a list of your favorite subjects (as strings). 
+Use the join() function to combine all subjects into a single string separated by commas.
+Then create another version using " - " as the separator.
+Print both the original list and both joined strings.
+"""
