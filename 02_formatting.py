@@ -2,10 +2,13 @@
 TASK 1:
 Write code that checks if a user entered the correct password.
 The password should not be case sensitive
-
 """
-
-
+correct_pw = "idc123"
+user_ans =  input("What is the password?")
+if user_ans.lower() == correct_pw.lower() :
+    print("ACCESS GRANTED")
+else :
+    print("ACCESS DENIED")  
 
 
 """
@@ -13,11 +16,11 @@ TASK 2:
 Write code that checks if a user inputs an empty string
 If the string is empty, print "invalid" otherwise print "valid"
 """
-user = input("what is a food you would like to try?")
-if user.strip == "":
+user= input("what is a food you would like to try?")
+if user == "":
     print("invalid")
 else :
-    print("valid ")
+    print("valid")
 """
 TASK 3:
 
@@ -44,3 +47,11 @@ TASK 5:
 Write a program that takes in two floats, and prints the quotient
 The result should be rounded to the nearest tenth (1 decimal place)
 """
+flo_user = input("give me an float")
+flo_user2 = input("give me another float")  
+if flo_user2 != 0:
+answer = flo_user/flo_user2
+rounded_answer = round(answer, 1)
+print("The answer is:", rounded_answer)
+else: 
+print("this is an error")
