@@ -52,16 +52,24 @@ Calculate the cost of shipping for an online order based on the order weight and
 The shipping cost is $5 per kilogram for Zone A and $7 per kilogram for Zone B. 
 If the order weight is less than 0 kg, return an error message.
 '''
-weight = int(input("How big is the package?"))
+weight = float(input("How big is the package?"))
+#ask what is the weight of the package
 us = weight * 7
 we = weight * 5
-if weight < 0:
-    print("ERROR")
+#make the variable for both of the zones 
 zon = input("What is the destination zone? Zone A or Zone B?")
-if zon == "Zone A" or zon == "A":
-    print(f"the price is {we}")
-elif zon == "Zone B" or zon =="B":
-     print(f"the price is {us}")
+if weight < 0:
+    print("ERROR MESSAGE")
+# ask what zone they are in 
+elif zon == "A":
+    print("the price is" ,we) 
+    #if they pick A then the price would whatever the weight is times 5
+elif zon == "B":
+     print("the price is", us) 
+     #if they pick B then the price would whatever the weight is times 7
+else:
+    print("")
+    #
 
 
     
