@@ -3,8 +3,8 @@ Exercise 1:
 Check if an integer is even and greater than 10.
 Return True if both conditions are met, False otherwise.
 '''
-num = int(input("Give me a number"))
-if num >= 10: 
+num = (input("Give me a number"))
+if num >    10: 
     print("True")
 #if they are greater than 10 then it would be true 
 else: 
@@ -52,23 +52,20 @@ Calculate the cost of shipping for an online order based on the order weight and
 The shipping cost is $5 per kilogram for Zone A and $7 per kilogram for Zone B. 
 If the order weight is less than 0 kg, return an error message.
 '''
-weight = float(input("How big is the package?"))
-#ask what is the weight of the package
+weight = float(input("What is the weight of the package?"))#ask what is the weight of the package
+zon = input("What is the destination zone? Zone a or Zone b?")#ask what zone they are in 
 us = weight * 7
 we = weight * 5
-#make the variable for both of the zones 
-zon = input("What is the destination zone? Zone A or Zone B?")
-if weight < 0:
-    print("ERROR MESSAGE")
-# ask what zone they are in 
-elif zon == "A":
-    print("the price is" ,we) 
+#make the variables for both of the zones 
+if weight > 0:
+    if zon == "a":
+        print("the price is" , we) 
     #if they pick A then the price would whatever the weight is times 5
-elif zon == "B":
-     print("the price is", us) 
+    if zon == "b":
+         print("the price is", us) 
      #if they pick B then the price would whatever the weight is times 7
 else:
-    print("")
+    print("ERROR MESSAGE")
     #
 
 

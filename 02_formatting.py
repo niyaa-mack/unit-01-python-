@@ -50,8 +50,8 @@ The result should be rounded to the nearest tenth (1 decimal place)
 flo_user = input("give me an float")
 flo_user2 = input("give me another float")  
 if flo_user2 != 0:
-answer = flo_user/flo_user2
-rounded_answer = round(answer, 1)
-print("The answer is:", rounded_answer)
+    answers = flo_user/flo_user2
+    rounded_answer = round(answers, 1)
+    print("The answer is:", rounded_answer)
 else: 
-print("this is an error")
+    print("this is an error")
