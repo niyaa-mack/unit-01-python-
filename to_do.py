@@ -1,13 +1,15 @@
-todo = [ ]
-print()
+todo = open()
 
-print()
+with open("todo.txt") as file:
+        rite = file.readlines()
+        print(rite)
+
 
 while True:
     print()
 
     print(", " .join(todo))
-    ques = input("Do you want to add or remove from the list?")
+    ques = input("Do you want to add, remove, edit, clear, or exit from the list?")
 
 
 
@@ -27,3 +29,6 @@ while True:
         if remove:
             del todo[remove - 1]
         
+
+    elif ques == "exit":
+        rite = file.write()
