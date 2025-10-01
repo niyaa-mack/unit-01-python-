@@ -1,14 +1,14 @@
 todo = [ ]
-to1 = input("What do you want on your to do list?")
 print()
-todo.append(to1)
-print("," .join(todo))
+
 print()
 
 while True:
-   
-    ques = input("Do you want to add or remove from the list?")
     print()
+
+    print(", " .join(todo))
+    ques = input("Do you want to add or remove from the list?")
+
 
 
     if ques == "add":
@@ -19,8 +19,11 @@ while True:
             print(",".join(todo))
             print()
         else:
+            print("nothing was added")
             print(todo)
 
-    if ques == "remove":
-        rem = input("Which one do you want to remove?")
-        del todo [rem - 1]
+    elif ques == "remove":
+        remove = int(input("Which one do you want to remove?"))
+        if remove:
+            del todo[remove - 1]
+        
