@@ -73,3 +73,6 @@ b_2 = ["set" , False]
 c = a_1 + b_2
 #adding two list together
 print (c)
+
+
+

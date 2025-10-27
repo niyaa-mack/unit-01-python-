@@ -47,11 +47,18 @@ class BankAccount:
         self.owner = owner
         self.balance = balance
     def deposit(self, amount):
-        if amount > 0:
-            
-        amount1 = input("how much money do you want to deposit ")
-        print("I would like to deposit $" + amount1 + "dollars")
+        self.balance += amount
+        print("deposited:", amount)
 
-    def withdraw(self): 
-        if 
-        amount2 = input("How much you want to withdraw?")
+    def withdraw(self, amount ): 
+        if amount <= self.balance:
+            self.balance -= amount
+            print("Withdrew:", amount)
+        
+        else:
+            print("Not enough balance.") 
+            
+account = BankAccount("Shaniya", 88)
+account.deposit(54)
+account.withdraw(30)
+account.withdraw(90)
