@@ -8,11 +8,11 @@ them to include appropriate try/except blocks to handle exceptions gracefully.
 Example 1: Division
 """
 print()
-def divide_numbers(num1, num2):
+def divide_numbers(num1, num2): 
     try:
         result = num1 / num2
         print("Result:", result)
-    except ZeroDivisionError:
+    except ZeroDivisionError: #the type of error it gets so you have to tell them what they are doing wrong
         print("You cant put the second number as 0. ")
 
 # Example usage:
@@ -23,10 +23,10 @@ Example 2: Opening Files
 """
 
 def read_file(filename): 
-    try:
+    try: #this code is being analyzed by 
         file = open(filename, 'r')
         contents = file.read()
-    except FileNotFoundError:
+    except FileNotFoundError: # 
         print("There is no file found named nonexistent.txt")
     
 
@@ -75,7 +75,12 @@ def process_file(filename):
             contents = file.read()
             print("File contents:", contents)
     except FileNotFoundError:
-        print("Error: File not found.")
+            print("Error: File not found.")
+    else:
+        print("the code works no errors")
+    finally:
+        print("the file is not here so you have to make one.")
 
 # Example usage:
 process_file("example.txt")
+
